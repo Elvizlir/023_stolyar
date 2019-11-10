@@ -55,9 +55,9 @@ mixin pugin()
 						a.page-numbers(href='#')= n 
 					else
 						block
-			//- +li()
-			//- 	span.prev.page-numbers( )
-			//- 		img(src="img/svg/prev.svg", alt="")
+			+li()
+				span.prev.page-numbers.disabled( )
+					+icon('prev')
 			+li()
 				span.page-numbers.current  1
 			- for (var x = 2; x < 3; x++)

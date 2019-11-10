@@ -11,8 +11,12 @@
 
 	&__main-img-block{
 		@include block(425,285);
-		border: rem(10) solid #d1b795;
-		margin-bottom: rem(20);
+		border: rem(7) solid #d1b795;
+		margin-bottom: rem(10);
+		@include media-breakpoint-up(md){
+			border: rem(10) solid #d1b795;
+			margin-bottom: rem(20);
+		}
 	}
 
 	&__img-title{
@@ -30,16 +34,22 @@
 	}
 	
 	&__img-row{
-		@include media-breakpoint-down(sm){
-			margin-bottom: rem(30);
+		@include roww(5);
+		margin-bottom: rem(30);
+		@include media-breakpoint-up(md){
+			@include roww(10);
+			margin-bottom: 0;
 		}
-		@include roww(10);
 	}
 
 	&__sm-img-block{
-		border: rem(7) solid #d1b795;
+		border: rem(5) solid #d1b795;
 		@include block(125,85);
-		margin-bottom: rem(15);
+		margin-bottom: rem(10);
+		@include media-breakpoint-up(md){
+			border: rem(7) solid #d1b795;
+			margin-bottom: rem(15);
+		}
 	}
 
 	&__descr{

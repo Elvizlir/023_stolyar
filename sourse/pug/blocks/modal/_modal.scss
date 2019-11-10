@@ -120,6 +120,25 @@ a {
 }
 
 
+.modal-phone{
+	text-align: center;
+	&__title{
+		@extend .h3;
+		margin-bottom: rem(10);
+	}
+	&__phone-block{
+		background-color: #d1b892;
+		margin-bottom: rem(10);
+		color: #fff;
+		font-weight: 700;
+		letter-spacing: 2px;
+		&:hover{
+			color: #fff;
+			background-color: #7c684e;
+		}
+	}
+}
+
 // 
 @include media-breakpoint-up(xl) {}
 

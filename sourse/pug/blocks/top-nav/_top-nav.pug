@@ -6,6 +6,9 @@ mixin mob-mnu()
 		+e.inner
 		
 			+mnu()
+			.top-nav__phone-wrap.text-center
+				a.top-nav__phone-number(href='tel:+74952114630') +7 (495) 211-46-30
+				a.top-nav__phone-number(href='tel:+74952114630') +7 (495) 211-46-30
 			.text-right
 	//  мобильное меню
 mixin top-nav() 
@@ -22,8 +25,13 @@ mixin top-nav()
 					+e.phone-wrap
 						+e.A.phone-number(href='tel:+74952114630') +7 (495) 211-46-30
 						+e.A.phone-number(href='tel:+74952114630') +7 (495) 211-46-30
-				.col-auto.d-lg-none
-					+b.toggle-menu-mobile--js
-						span
+				.col-sm-auto.col.d-lg-none
+					.row.justify-content-end
+						.col-auto.d-sm-none
+							a.link-modal(href='#modal-phone')
+								+icon('phone')
+						.col-sm.col-auto
+							+b.toggle-menu-mobile--js
+								span
 					
 	// end top-nav

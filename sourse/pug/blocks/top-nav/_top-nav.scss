@@ -65,12 +65,17 @@
 			text-align: right;
 		}
 		&-number{
+			color: #333;
 			font-size: rem(14);
 			display: block;
 			line-height: 1.2;
 		}
 	}
 
+	.icon-phone{
+		font-size: rem(22);
+		color: #d1b892;
+	}
 	// 
 	@include media-breakpoint-up(xl) {}
 

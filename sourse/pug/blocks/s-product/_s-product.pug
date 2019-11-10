@@ -9,7 +9,7 @@ mixin s-product()
 						+e.img-title Беседка Софрино
 					+e.img-row.row
 						mixin prod-img-sm(i)
-							.col-sm-4.col-6
+							.col-4
 								+e.A.sm-img-block.bg-wrap(href=`img/product${i}.jpg` data-fancybox="images" data-caption="")
 									+pic(`prod-img-sm${i}.jpg`,'bg','','0')(class='picture-bg')
 						+prod-img-sm('1')
@@ -29,5 +29,5 @@ mixin s-product()
 						strong Цена
 						p
 							small От 315 000 рублей
-						+e.btn.btn(href='#') Узнать цену
+						+e.btn.btn(data-fancybox href='#modal-call') Узнать цену
 	// end s-product

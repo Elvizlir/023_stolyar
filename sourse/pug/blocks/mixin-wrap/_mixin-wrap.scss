@@ -64,6 +64,15 @@
 }
 
 .page-numbers{
+	.disabled{
+		&:hover{
+			background-color: transparent !important;
+			border-color: transparent !important;
+		}
+		.icon{
+			opacity: .5;
+		}
+	}
 	.icon{
 		font-size: rem(16);
 		color: #87B321;
