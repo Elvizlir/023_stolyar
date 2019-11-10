@@ -1,5 +1,11 @@
 Сборка на основе pug. scss, Bootstrap 4.3.3
 
+страницы
+1. https://elvizlir.github.io/023_stolyar/public/index.html
+2. https://elvizlir.github.io/023_stolyar/public/02-categories.html
+3. https://elvizlir.github.io/023_stolyar/public/03-product-page.html
+4. https://elvizlir.github.io/023_stolyar/public/04-video.html
+5. https://elvizlir.github.io/023_stolyar/public/05-contacts.html
 
 4.3.3.2
 1. Перенес библиотеки в node_modules.  С помощью плагина они переносятся в libs c удалением лишнего
