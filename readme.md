@@ -6,6 +6,7 @@
 3. https://elvizlir.github.io/023_stolyar/public/03-product-page.html
 4. https://elvizlir.github.io/023_stolyar/public/04-video.html
 5. https://elvizlir.github.io/023_stolyar/public/05-contacts.html
+6. https://elvizlir.github.io/023_stolyar/public/06-mistakes.html
 
 4.3.3.2
 1. Перенес библиотеки в node_modules.  С помощью плагина они переносятся в libs c удалением лишнего
