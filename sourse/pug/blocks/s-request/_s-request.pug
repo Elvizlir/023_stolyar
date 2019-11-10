@@ -1,0 +1,15 @@
+mixin s-request()
+	// start s-request
+	+b.s-request.bg-wrap.section#s-request&attributes(attributes)
+		+pic('request-bg.jpg','bg')(class='picture-bg')
+		.container
+			+e.wrapper
+				+e.text Оставьте заявку на бесплатный выезд и замер.<br>Наш дизайнер изучит Ваши пожелания и предпочтения.<br>Через 72 часа Вы получите готовый 3D проект беседки абсолютно БЕСПЛАТНО!
+				+form-wrap
+					input(type='hidden' name='order' value='форма')
+					.row
+						.col-md-7
+							+input('Ваш телефон','tel','','tel')(required)
+						.col-md-5
+							+e.btn.btn(type='submit') Оставить заявку
+	// end s-request

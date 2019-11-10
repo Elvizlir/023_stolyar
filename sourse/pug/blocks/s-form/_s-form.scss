@@ -1,0 +1,66 @@
+.s-form {
+	@include media-breakpoint-up(lg){
+		padding: rem(60) rem(70);
+	}
+	color: #fff;
+	
+	h2{
+		margin-bottom: rem(25);
+		text-align: center;
+	}
+
+	&__text{
+		font-size: rem(18);
+		line-height: 1.4;
+		margin-bottom: rem(35);
+	}
+
+	.form-wrap{
+		&__input-wrap{
+			@include media-breakpoint-up(md){
+				margin: 0;
+				height: 100%;
+			}
+			input{
+				height: 100%;
+				border-color: #fff;
+				color: #fff;
+			}
+		}
+		.row{
+			@include roww(45);
+		}
+		&__btn{
+			background-color: #fff;
+			color: $black;
+			&:hover{
+				background-color: #edddc2;
+			}
+		}
+	}
+	//
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+}

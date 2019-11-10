@@ -1,0 +1,24 @@
+mixin s-advantages()
+	// start s-advantages
+	+b.s-advantages.section#s-advantages&attributes(attributes)
+		.container
+			+e.title Наши преимущества
+			+e.wrapper
+				.row.justify-content-center
+					mixin adv-i(i, t)
+						+e.item
+							+e.img-wrap
+								img.res-i(src=`img/@2x/adv${i}.png` alt='')
+							+e.item-title=t
+					+e.col.col-lg.col-sm-6
+						+adv-i('1','Работаем 12 лет на рынке')
+					+e.col.col-lg.col-sm-6
+						+adv-i('2','Собираем беседку за 1 день')
+					+e.col.col-lg-3.col-sm-6
+						+adv-i('3','Начало работ сразу после заключения договора')
+					+e.col.col-lg.col-sm-6
+						+adv-i('4','1 год гарантии обслуживания')
+					+e.col.col-lg.col-sm-6
+						+adv-i('5','Индивидуальный проект за 3 дня')
+
+	// end s-advantages

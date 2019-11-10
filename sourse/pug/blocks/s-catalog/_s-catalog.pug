@@ -1,0 +1,21 @@
+mixin s-catalog()
+	// start s-catalog
+	+b.SECTION.s-catalog.section#s-catalog&attributes(attributes)
+		.container
+			h2 Каталоги наших работ
+			.row
+				mixin catalog-i(i, t)
+					+e.A.item.bg-wrap(href='#')
+						+pic(`catalog-bg${i}.jpg`,'bg')(class='picture-bg')
+						+e.title=t
+						+e.subtitle подробнее
+
+				+e.col.col-lg-8
+					+catalog-i('1','Беседки')
+				+e.col.col-lg-4.col-md-6
+					+catalog-i('2','Строительные работы')
+				+e.col.col-lg-4.col-md-6
+					+catalog-i('3','Будки и вольеры')
+				+e.col.col-lg-8
+					+catalog-i('4','Навесы')
+	// end s-catalog

@@ -1,0 +1,36 @@
+mixin footer()
+	+b.FOOTER.footer.block-with-lazy
+		+e.main-block
+			.container
+				.row
+					.col-lg
+						.row
+							.col-sm-4.col-6
+								+e.A.link(href='#') Главная
+							.col-sm-4.col-6
+								+e.A.link(href='#') Беседки
+							.col-sm-4.col-6
+								+e.A.link(href='#') Навесы
+							.col-sm-4.col-6
+								+e.A.link(href='#') Перголы
+							.col-sm-4.col-6
+								+e.A.link(href='#') Барбекю
+							.col-sm-4.col-6
+								+e.A.link(href='#') Контакты
+					.col-lg-3
+						.row.align-items-center
+							.col-lg-12.col-sm
+								+e.phone-block
+									+e.A.number(href='tel:+74952114630') +7 (495) 211-46-30
+									+e.A.number(href='tel:+74952114630') +7 (495) 211-46-30
+							.col-lg-12.col-sm-auto
+								+e.time-block
+									+e.time-title График работы:
+									+e.time-descr ПН-ВС с 08:00 до 21:00
+
+		+e.bottom-line
+			.container
+				+e.copy copyright © 2017
+				+e.copy STOLYAR LAND
+
+			

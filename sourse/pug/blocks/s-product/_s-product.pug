@@ -1,0 +1,33 @@
+mixin s-product()
+	// start s-product
+	+b.SECTION.s-product.section#s-product&attributes(attributes)
+		.container
+			+e.main-row.row
+				.col-md-6
+					+e.A.main-img-block.bg-wrap(href='img/product-main.jpg' data-fancybox="images" data-caption="")
+						+pic('main-prod-img.jpg','bg')(class='picture-bg')
+						+e.img-title Беседка Софрино
+					+e.img-row.row
+						mixin prod-img-sm(i)
+							.col-sm-4.col-6
+								+e.A.sm-img-block.bg-wrap(href=`img/product${i}.jpg` data-fancybox="images" data-caption="")
+									+pic(`prod-img-sm${i}.jpg`,'bg','','0')(class='picture-bg')
+						+prod-img-sm('1')
+						+prod-img-sm('2')
+						+prod-img-sm('3')
+						+prod-img-sm('4')
+						+prod-img-sm('5')
+						+prod-img-sm('6')
+				.col-md-6
+					+e.descr
+						h1 Беседка "Софрино"
+						p Беседка открытая с жалюзями и печью барбекю + дровник в стиле.
+						p Цена по запросу.
+						strong Материал:
+						p
+							small Сосна камерной сушки, влажность 9% - 12% : клеёный брус 120х120 (150x150 - дополнительная плата), имитация бруса
+						strong Цена
+						p
+							small От 315 000 рублей
+						+e.btn.btn(href='#') Узнать цену
+	// end s-product

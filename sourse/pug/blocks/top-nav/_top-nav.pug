@@ -1,0 +1,29 @@
+
+mixin mob-mnu()
+	+b.menu-mobile--js.d-lg-none
+		+b.toggle-menu-mobile--js
+			span
+		+e.inner
+		
+			+mnu()
+			.text-right
+	//  мобильное меню
+mixin top-nav() 
+	// start top-nav
+	+b.top-nav.block-with-lazy
+		.container
+			+e.row.row.align-items-center
+				.col-auto
+					+e.A.img-wrap(href='/')
+						img.res-i(src='img/@2x/logo.png' alt='')
+				.col.d-none.d-lg-block
+					+mnu()
+				.col-lg-auto.col.d-none.d-sm-block
+					+e.phone-wrap
+						+e.A.phone-number(href='tel:+74952114630') +7 (495) 211-46-30
+						+e.A.phone-number(href='tel:+74952114630') +7 (495) 211-46-30
+				.col-auto.d-lg-none
+					+b.toggle-menu-mobile--js
+						span
+					
+	// end top-nav

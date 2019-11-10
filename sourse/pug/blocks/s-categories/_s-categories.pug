@@ -1,0 +1,25 @@
+mixin s-categories()
+	// start s-categories
+	+b.SECTION.s-categories.section#s-categories&attributes(attributes)
+		.container
+			h2 Беседки
+			.row
+				mixin cat-i(i, t)
+					+e.col.col-md-4.col-sm-6
+						+e.A.item.bg-wrap(href='#')
+							+pic(`category${i}.jpg`,'bg')(class='picture-bg')
+							+e.item-title=t
+				+cat-i('1','Проекты')
+				+cat-i('2','Икша')
+				+cat-i('3','Беседка с печью "Трио"')
+				+cat-i('4','Кресты')
+				+cat-i('5','Беседка Софрино')
+				+cat-i('6','Эконом')
+				+cat-i('7','"Просвет Гранд"')
+				+cat-i('8','"Китайка"')
+				+cat-i('9','"Просвет с барбекю"')
+				+cat-i('10','"Просвет Веер"')
+				+cat-i('11','"Просвет"')
+				+cat-i('13','"Дачная"')
+				+pugin()
+	// end s-categories

@@ -1,0 +1,5 @@
+JSCCommons-mistakes();
+	s-mistakes() {
+
+	}
+	

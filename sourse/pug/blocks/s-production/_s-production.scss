@@ -1,0 +1,63 @@
+.s-production {
+	@include media-breakpoint-up(lg){
+		padding: rem(70) 0 rem(65);
+	}
+
+	.row{
+		@include roww(40);
+	}
+	
+	&__col{
+		margin-bottom: rem(27);
+	}
+
+	h2{
+		line-height: 1.2;
+		margin-bottom: rem(23);
+	}
+	p{
+		@include media-breakpoint-up(md){
+			max-width: rem(409);
+		}
+		line-height: 1.4;
+		margin-bottom: rem(23);
+	}
+
+	&__btn{
+		display: block;
+		max-width: rem(266);
+		margin: 0 auto;
+		color: #fff;
+		padding: rem(12) rem(5);
+		background-color: #a59478;
+		&:hover{
+			color: #fff;
+			background-color: #c9b695;
+		}
+	}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+}

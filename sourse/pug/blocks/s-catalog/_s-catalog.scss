@@ -1,0 +1,71 @@
+.s-catalog {
+	@include media-breakpoint-up(lg){
+		padding: rem(75) 0 rem(20);
+	}
+
+
+	h2{
+		text-transform: uppercase;
+		text-align: center;
+		@include media-breakpoint-up(lg){
+			margin: 0;
+		}
+	}
+
+	.row{
+		@include roww(10);
+	}
+
+	&__col{
+		margin-bottom: rem(10);
+	}
+
+	&__item{
+		padding: rem(40) rem(15) rem(20) rem(20);
+		border: rem(10) solid transparent;
+		display: block;
+		min-height: rem(334);
+		@include mt;
+		color: #fff;
+		&:hover{
+			text-decoration: none;
+			color: #fff;
+			border-color: #d1b892;
+		}
+	}
+
+	&__title{
+		display: block;
+		text-transform: uppercase;
+		@include rfs(28);
+		line-height: 1.2;
+	}
+	&__subtitle{
+		font-size: rem(14);
+	}
+		 
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-up(xs) {}
+	
+	//
+	@include media-breakpoint-between(md, xl) { }
+	
+	
+	//
+	@include media-breakpoint-only(xs) {}
+	@include media-breakpoint-only(sm) {}
+	@include media-breakpoint-only(md) {}
+	@include media-breakpoint-only(lg) {}
+	@include media-breakpoint-only(xl) {}
+	
+	//
+	@include media-breakpoint-down(xl) {}
+	@include media-breakpoint-down(lg) {}
+	@include media-breakpoint-down(md) {}
+	@include media-breakpoint-down(sm) {}
+	@include media-breakpoint-down(xs) {} 
+
+}

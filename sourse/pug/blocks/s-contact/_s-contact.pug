@@ -1,0 +1,41 @@
+mixin s-contact()
+	// start s-contact
+	+b.s-contact.section.block-with-lazy#s-contact&attributes(attributes)
+		.container
+			h1 Контакты
+			p Телефоны:
+			p
+				a(href='tel:+79689828106')
+					strong +7 (968) 982-81-06
+			p
+				a(href='tel:+74952114630')
+					strong +7 (495) 211-46-30
+			p
+				a(href='tel:+79852114630')
+					strong +7 (985) 211-46-30
+			p Режим работы:
+			p Понедельник - Пятница
+			p
+				strong с 09:00 до 21:00
+			p Суббота - Воскресенье
+			p
+				strong с 10:00 до 20:00
+			p
+				strong Адрес:
+			p 141554, Московская область, Солнечногорский район, деревня Кривцово, 5а
+			p
+				strong E-mail:
+			p
+				a(href='mailto:stolyarland@yandex.ru') stolyarland@yandex.ru
+			p Мы в инстаграмм:
+			p
+				a(href='https://www.instagram.com/stolyarland/') https://www.instagram.com/stolyarland/
+			p
+				strong Мы ВКонтакте:
+			p
+				a(href='https://vk.com/stolyar_land')
+					+icon('vk')
+					| Беседки и навесы | Stolyar Land
+			+e.map-wrap
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afcbe535587738b3c4ee632109c2992e0b8da3340874e429bd1832dbb47073971&amp;source=constructor" width="960" height="400"></iframe>
+	// end s-contact

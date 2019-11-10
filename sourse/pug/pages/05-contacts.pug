@@ -1,0 +1,40 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+include ../blocks/s-catalog/_s-catalog.pug
+include ../blocks/s-mistakes/_s-mistakes.pug
+include ../blocks/s-advantages/_s-advantages.pug
+include ../blocks/s-request/_s-request.pug
+include ../blocks/s-wood/_s-wood.pug
+include ../blocks/s-features/_s-features.pug
+include ../blocks/s-production/_s-production.pug
+include ../blocks/s-reviews/_s-reviews.pug
+include ../blocks/s-categories/_s-categories.pug
+
+block variables
+	- let  mainPage= null
+block title
+	- let  title= 'Контакты  - Stolyar Land'
+	title= title
+block pagecontent
+	+mob-mnu()
+	+header()
+		//- +top-line()
+		+top-nav()
+	.bread-wrapper.top-page-block
+		.container
+			+breadcrumb('Главнaя','Контакты')
+	+s-contact()
+	//- +s-catalog()
+	//- +s-mistakes()
+	//- +s-advantages()
+	//- +s-request()
+	//- +s-wood()
+	//- +s-features('1')
+	//- +s-production()
+	//- +s-features('2')
+	//- +s-reviews()
+	+s-form()
+	+footer()

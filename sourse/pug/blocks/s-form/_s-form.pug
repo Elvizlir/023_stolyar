@@ -1,0 +1,15 @@
+mixin s-form()
+	// start s-form
+	+b.s-form.section.bg-wrap.block-with-lazy#s-form&attributes(attributes)
+		+pic('form-bg.jpg','bg')(class='picture-bg')
+		.container
+			h2 Заявка на бесплатный выезд и замер
+			+e.text Оставьте заявку на бесплатный выезд и замер. Опытный специалист сможет помочь Вам сориентироваться с выбором архитектурной формы, учитывая Ваши интересы и техническую возможность монтажа данной конструкции непосредственно на выбранном месте.
+			+form-wrap
+				input(type='hidden' name='order' value='форма')
+				.row
+					.col-md-6
+						+input('Ваш телефон','tel','','tel')(required)
+					.col-md-6
+						+e.btn.btn(type='submit') Оставить заявку
+	// end s-form
